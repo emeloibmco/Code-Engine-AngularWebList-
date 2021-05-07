@@ -16,4 +16,11 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 
 ## Paso 1.
 ### Clonar repositorio AngularWebList 📁
-La aplicación utilizada en esta guía la puede encontrar en  <a href="https://github.com/emeloibmco/AngularWebList"> AngularWebList</a>.
+La aplicación utilizada en esta guía la puede encontrar en  <a href="https://github.com/emeloibmco/AngularWebList"> AngularWebList</a>. Para clonar el repositorio en su computador, realice los siguientes pasos:
+
+1. En su computador cree una carpeta a la que pueda acceder con facilidad y asignele un nombre relacionado con la aplicación.
+2. Abra una ventana de *Windows PowerShell* y dirigase con el comando *cd* hasta la carpeta que creó en el paso 1.
+3. Una vez se encuentre dentro de la carpeta creada digite los siguientes comandos para clonar el repositorio:
+```
+git clone https://github.com/emeloibmco/AngularWebList.git
+```
