@@ -25,6 +25,6 @@ La aplicación utilizada en esta guía la puede encontrar en  <a href="https://g
 git clone https://github.com/emeloibmco/AngularWebList.git
 ```
 4. Verifique dentro de su carpeta que se encuentran descargados los archivos de la aplicación que se muestran en el repositorio.
-5. <p align="center"><img width="600" src="https://https://github.com/emeloibmco/Code-Engine-AngularWebList-/Imagenes/Clonar Repositorio.gif"></p>
+5. <p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Clonar%20Repositorio.gif"></p>
 
 
