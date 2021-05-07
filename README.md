@@ -3,7 +3,7 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
-2. [Paso 1. Clonar repositorio AngularWebList](#Paso-1)
+2. [Paso 1. Clonar repositorio AngularWebList](#Paso-1-Clonar-repositorio-AngularWebList-📁)
 3. [Paso 2. Crear archivo Dockerfile](#Paso-2)
 4. [Paso 3. Crear imagen de la aplicación en Docker](#Paso-3)
 5. [Paso 4. Subir imagen a Container Registry](#Paso-4)
@@ -14,5 +14,4 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 ## Pre-requisitos :pencil:
 * Contar con una cuenta actualizada en IBM Cloud.
 
-## Paso 1
-### Clonar repositorio AngularWebList 📁
+## Paso 1 Clonar repositorio AngularWebList 📁
