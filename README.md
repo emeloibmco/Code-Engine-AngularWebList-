@@ -16,3 +16,4 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 
 ## Paso 1.
 ### Clonar repositorio AngularWebList 📁
+La aplicación utilizada en esta guía la puede encontrar en  <a href="https://github.com/emeloibmco/AngularWebList"> AngularWebList</a>.
