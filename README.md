@@ -24,3 +24,6 @@ La aplicación utilizada en esta guía la puede encontrar en  <a href="https://g
 ```
 git clone https://github.com/emeloibmco/AngularWebList.git
 ```
+4. Verifique dentro de su carpeta que se encuentran descargados los archivos de la aplicación que se muestran en el repositorio.
+
+
