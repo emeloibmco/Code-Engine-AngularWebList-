@@ -12,3 +12,7 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 8. [Paso 7. Prueba de funcionamiento](#Paso-7)
 
 ## Pre-requisitos :pencil:
+* Contar con una cuenta actualizada en IBM Cloud.
+
+## Paso 1
+### Clonar repositorio AngularWebList 📁
