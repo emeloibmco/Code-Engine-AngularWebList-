@@ -3,9 +3,10 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 
 ## Índice  :bookmark_tabs:
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
-2. [Paso 1. Verificación de conectividad](#Paso-1)
-3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2)
-4. [Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3)
-5. [Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-4)
-6. [Paso 5. Ejecución de Prometheus](#Paso-5)
-7. [Paso 6. Visualización de métricas en Sysdig](#Paso-6)
+2. [Paso 1. Clonar Repositorio AngularWebList](#Paso-1)
+3. [Paso 2. Crear Dockerfile](#Paso-2)
+4. [Paso 3. Crear imagen de la aplicación](#Paso-3)
+5. [Paso 4. Subir imagen a Container Registry](#Paso-4)
+6. [Paso 5. Crear acceso a registro](#Paso-5)
+7. [Paso 6. Crear aplicación en Code Engine](#Paso-6)
+8. [Paso 7. Prueba de funcionamiento](#Paso-7)
