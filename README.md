@@ -1,4 +1,4 @@
-# Code-Engine-AngularWebList ☁
+# Code-Engine-AngularWebList ☁ 
 IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de ayudarle a crear apps y trabajos modernos, centrados en orígenes y sin servidor. Code Engine abstrae la carga operativa derivada de la creación, el despliegue y la gestión de cargas de trabajo en Kubernetes para que los desarrolladores puedan centrarse en lo que para ellos es más importante: el código fuente. Esta guía está enfocada en el despliegue de una imagen de contendor de la aplicación AngularWebList sobre Code Engine.
 
 ## Índice  📰
