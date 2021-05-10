@@ -62,4 +62,5 @@ copy Dockerfile.txt Dockerfile
 5. Verifique en su carpeta que el archivo Dockerfile se encuentre sin ninguna extensión y elimine el archivo *Dockerfile.txt*.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Dockerfile.gif"></p>
 
-<**Nota**: Si desea consultar más información acerca de las instrucciones de Dockerfile para Code Engine, puede consultar <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-dockerfilet"> Cómo escribor un Dockerfile para Code Engine </a>.
+<**Nota**: 
+Si desea consultar más información acerca de las instrucciones de Dockerfile para Code Engine, puede consultar <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-dockerfile"> Cómo escribir un Dockerfile para Code Engine </a>.
