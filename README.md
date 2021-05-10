@@ -86,7 +86,7 @@ docker build -t <nombre_imagen:tag> .
 ## Paso 4. 
 ### Subir imagen a IBM Cloud Container Registry 📤
 Una vez ha creado la imagen de su aplicación en *Docker*, se debe subir dicha imagen a *IBM Cloud Container Registry* para poder hacer el despliegue en *Code Engine*.
->**Nota**: La imagen también la puede subir a otro registro de imágenes como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Resgistry*.
+>**Nota**: La imagen también la puede subir a otro registro de imágenes como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Registry*.
 
 Para subir la imagen creada a *IBM Cloud Container Registry* realice lo siguiente:
 1. En la ventana de *Windows PowerShell* y sin salir en ningun momento de la carpeta que contiene los archivos, inicie sesión en su cuenta de *IBM Cloud* con el siguiente comando:
