@@ -99,7 +99,7 @@ ibmcloud login --sso
 ```
 ibmcloud target -r <REGION> -g <GRUPO_RECURSOS>
 ```
->**Nota**: Reemplace <REGION> y <GRUPO_RECURSOS> con su información.
+>**Nota**: Reemplace /<REGION> y <GRUPO_RECURSOS> con su información.
 
 4. Registre el daemon de Docker local en *IBM Cloud Container Registry* con el comando:
 ```
@@ -110,7 +110,7 @@ ibmcloud cr login
 ```
 ibmcloud cr namespace-add <namespace>
 ```
->**Nota**: Reemplace <namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación.
+>**Nota**: Reemplace /<namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación.
 
 6. Elija un repositorio y una etiqueta con la que pueda identificar su imagen. En este caso, debe colocar la información de la imagen que creó en *Docker* y el *namespace*. Coloque el siguiente comando:
 ```
