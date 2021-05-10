@@ -156,7 +156,7 @@ En este paso para desplegar la imagen desde *IBM Cloud Container Registry* en *C
 3. En la sección **"Elija el código que desea ejecutar""** seleccione la opción **Imagen de contenedor**.
 4. De click en el botón **Configurar imagen** y coloque lo siguiente:
 * En servidor de registro coloque el nombre de dominio que indicó en la creación del acceso a registro. En este caso es **us.icr.io**.
-* En acceso a registro seleccione el nombre del acceso que creó en el [Paso 5](#Paso-5)
+* En acceso a registro seleccione el nombre del acceso que creó en el [Paso 5](#Paso-5).
 * Seleccione el espacio de nombres que asignó cuando subió la imagen de la aplicación a *IBM Cloud Container Registry*.
 * Seleccione el repositorio (nombre de la imagen) que asignó en *IBM Cloud Container Registry*.
 * Seleccione la etiqueta de su imagen.
@@ -164,5 +164,5 @@ En este paso para desplegar la imagen desde *IBM Cloud Container Registry* en *C
 
 5. En el puerto de escucha coloque **8080**, teniendo en cuenta la configuración establecida en el *Dockerfile*.
 6. De click en *Crear* y espero unos minutos a que la imagen se despliegue sobre la aplicación que acaba de crear.
-<p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Aplicacion.gif"></p>
+<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Aplicacion.gif"></p>
 
