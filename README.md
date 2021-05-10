@@ -166,3 +166,5 @@ Para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, 
 6. De click en *Crear* y espero unos minutos a que la imagen se despliegue sobre la aplicación que acaba de crear.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Aplicacion.gif"></p>
 
+## Paso 7. 
+### Prueba de funcionamiento 🏆
