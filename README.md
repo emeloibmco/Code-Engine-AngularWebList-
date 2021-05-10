@@ -74,6 +74,6 @@ Para crear la imagen de la aplicación en *Docker* siga los pasos que se muestra
 
 1. En la ventaja de *Windows PowerShell* y asegurandose de que se encuentra dentro de la carpeta que contiene los archivos de la aplicación y el *Dockerfile*, digite el siguiente comando para crear la imagen de su aplicación:
 ```
-docker build -t <nombre_imagen:tag>
+docker build -t <nombre_imagen:tag> .
 ```
-> **Nota**: En la etiqueta **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la etiqueta **tag** indique la versión de su imagen, por ejemplo v1. Si desea no colocar ninguna verisón los puede hacer, dejando por defecto la versión *lastest*.
+> **Nota**: En la etiqueta **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la etiqueta **tag** indique la versión de su imagen, por ejemplo v1. Si desea no colocar ninguna versión lo puede hacer (en este caso la versión por defecto *lastest*).
