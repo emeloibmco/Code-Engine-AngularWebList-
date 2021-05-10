@@ -143,7 +143,7 @@ Para agregar un acceso de registro a *Code Engime* debe realizar lo siguiente:
 * En nombre de usuario por defecto debe quedar **iamapikey**.
 * En contraseña coloque la clave API creada en el ítem 1.
 * Finalice dando click en el botón **Crear**.
-<p align="center"><img width="500" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Acceso%20de%20Registro.gif"></p>
+<p align="center"><img width="450" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Acceso%20de%20Registro.gif"></p>
 
 Si desea consultar más información acerca de los accesos a registro puede dar click en <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-add-registry&locale=es#add-registry-access-ce-console"> Adición de acceso de registro a Code Engine </a>.
 
