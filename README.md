@@ -128,7 +128,7 @@ docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 
 ## Paso 5. 
 ### Crear acceso a registro en Code Engine 🔐
-Para agregar un acceso de registro a *Code Engime* debe realizar lo siguiente:
+Para agregar un acceso de registro a *Code Engine* debe realizar lo siguiente:
 
 1. Cree una clave API. Para ello de click en la pestaña **Gestionar** y seleccione la opción **Acceso (IAM)**. Posteriormente, de click en **Claves API** y luego en el botón **Crear una clave API de IBM Cloud**. Asigne un nombre, una descripción y presione el botón **Crear**. 
 >**Nota**: No olvide guardar la clave API que acaba de crear, ya que la usará en los pasos siguientes.
