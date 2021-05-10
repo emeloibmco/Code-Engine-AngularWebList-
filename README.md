@@ -179,4 +179,3 @@ Encuentre ejercicios inciales de *Code Engine* en <a href="https://cloud.ibm.com
 
 ## Autores ✒
 * Diana Andrea Espitia Torres.
-* Equipo IBM Cloud Tech Sales Colombia.
