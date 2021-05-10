@@ -99,7 +99,7 @@ ibmcloud login --sso
 ```
 ibmcloud target -r <REGION> -g <GRUPO_RECURSOS>
 ```
->**Nota**: Reemplace <REGION> y <GRUPO_RECURSOS> con su información.
+>**Nota**: Reemplace \<REGION> y <GRUPO_RECURSOS> con su información.
 
 4. Registre el daemon de Docker local en *IBM Cloud Container Registry* con el comando:
 ```
