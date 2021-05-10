@@ -32,5 +32,6 @@ git clone https://github.com/emeloibmco/AngularWebList.git
 ### Crear archivo Dockerfile 📑
 Es importante contar con un archivo conocido como *Dockerfile*, el cual, contiene los comandos o instrucciones que permiten crear la iamgen de una aplicación en Docker. Para agregar este archivo a su aplicación, realice los siguientes pasos:
 
-1. 
+1. Ingrese a la carpeta AngularWebList creada después de clonar el respositorio.
+2. De click derecho y cree una arhivo txt con el nombre *Dockerfile.txt*.
 
