@@ -1,12 +1,12 @@
 # Code-Engine-AngularWebList ☁ 
-IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de ayudarle a crear apps y trabajos modernos, centrados en orígenes y sin servidor. Code Engine abstrae la carga operativa derivada de la creación, el despliegue y la gestión de cargas de trabajo en Kubernetes para que los desarrolladores puedan centrarse en lo que para ellos es más importante: el código fuente. Esta guía está enfocada en el despliegue de una imagen de contendor de la aplicación AngularWebList sobre Code Engine.
+IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de ayudarle a crear apps y trabajos modernos, centrados en orígenes y sin servidor. Code Engine abstrae la carga operativa derivada de la creación, el despliegue y la gestión de cargas de trabajo en Kubernetes para que los desarrolladores puedan centrarse en lo que para ellos es más importante: el código fuente. Esta guía está enfocada en el despliegue de una imagen de contendor de la aplicación AngularWebList sobre Code Engine. 
 
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
 2. [Paso 1. Clonar repositorio AngularWebList](#Paso-1)
 3. [Paso 2. Crear archivo Dockerfile](#Paso-2)
 4. [Paso 3. Crear imagen de la aplicación en Docker](#Paso-3)
-5. [Paso 4. Subir imagen a Container Registry](#Paso-4)
+5. [Paso 4. Subir imagen a IBM Cloud Container Registry](#Paso-4)
 6. [Paso 5. Crear acceso a registro en Code Engine](#Paso-5)
 7. [Paso 6. Desplegar imagen dentro de una aplicación en Code Engine](#Paso-6)
 8. [Paso 7. Prueba de funcionamiento](#Paso-7)
@@ -16,6 +16,7 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 * Tener instalado *Docker Desktop* para verificar la creación de su imagen.
 * Tener una cuenta actualizada en IBM Cloud.
 * Contar con un proyecto en Code Engine para hacer el despliegue de una imagen en una aplicación (importante con cuenta actualizada).
+* Contar con la CLI de IBM Cloud en su computador.
 
 
 ## Paso 1.
@@ -83,5 +84,34 @@ docker build -t <nombre_imagen:tag> .
 
 
 ## Paso 4. 
-### Subir imagen a Container Registry 📤
+### Subir imagen a IBM Cloud Container Registry 📤
+Una vez ha creado la imagen de su aplicación en *Docker*, se debe subir dicha imagen a *IBM Cloud Container Registry* para poder hacer el despliegue en *Code Engine*.
+>**Nota**: La imagen tambien la puede subir a un registro central como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Resgistry*.
+
+Para subir la imagen creada a *IBM Cloud Container Registry* realice lo siguiente:
+1. En la ventana de *Windows PowerShell* y sin salir en ningun momento de la carpeta que contiene los archivos, inicie sesión en su cuenta de IBM Cloud con el siguiente comando:
+```
+ibmcloud login --sso
+```
+
+2. Seleccione la cuenta en donde se encuentra el proyecto de Code Engine (recuerde los Pre-requisitos).
+3. Una vez ha iniciado sesión, configure el grupo de recursos y la región que está utilizando para su proyecto de Code Engine. Para ello utilice el siguiente comando:
+```
+ibmcloud target -r <REGION> -g <GRUPO_RECURSOS>
+```
+>**Nota**: Reemplace <REGION> y <GRUPO_RECURSOS> con su información.
+
+4. Registre el daemon de Docker local en *IBM Cloud Container Registry* con el comando:
+```
+ibmcloud cr login
+```
+
+5. Cree un *namespace* dentro de *IBM Cloud Container Registry* para su imagen. Para ello ejecute el siguiente comando:
+```
+ibmcloud cr namespace-add <my_namespace>
+```
+>**Nota**: Reemplace <my_namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación.
+
+6. 
+
 
