@@ -13,7 +13,7 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 
 ## Pre-requisitos :pencil:
 * Tener una cuenta actualizada en IBM Cloud.
-* Contar con un proyecto en Code Engine para hacer el desppliegue de una imagen en una aplicación (importante con cuenta actualizada).
+* Contar con un proyecto en Code Engine para hacer el despliegue de una imagen en una aplicación (importante con cuenta actualizada).
 
 ## Paso 1.
 ### Clonar repositorio AngularWebList 📁
@@ -28,4 +28,6 @@ git clone https://github.com/emeloibmco/AngularWebList.git
 4. Verifique dentro de su carpeta que se encuentran descargados los archivos de la aplicación que se muestran en el repositorio.
 <p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Clonar%20Repositorio.gif"></p>
 
+## Paso 2.
+### Crear archivo Dockerfile 📑
 
