@@ -33,8 +33,8 @@ git clone https://github.com/emeloibmco/AngularWebList.git
 Es importante contar con un archivo conocido como *Dockerfile*, el cual, contiene los comandos o instrucciones que permiten crear la imagen de una aplicación en Docker. Para agregar este archivo a su aplicación, realice los siguientes pasos:
 
 1. Ingrese a la carpeta AngularWebList creada después de clonar el respositorio.
-2. De click derecho y cree una arhivo txt con el nombre *Dockerfile.txt*.
-3. Dentro del archivo *Dockerfile.txt* agregue las siguientes líneas, correspondientes a las instrucciones necesarias para crear la imagen de la aplicación AngularWebList
+2. De click derecho y cree una arhivo de texto con el nombre *Dockerfile.txt*.
+3. Dentro del archivo *Dockerfile.txt* agregue las siguientes líneas, correspondientes a las instrucciones necesarias para crear la imagen de la aplicación AngularWebList.
 ```
 
 FROM node:12-alpine AS builder
@@ -59,4 +59,4 @@ ENTRYPOINT ["serve", "-l", "8080", "/app"]
 copy Dockerfile.txt Docerfile
 ```
 
-5. Por último verifique en su carpeta que el archivo Dockerfile se encuentre sin ninguna extensión.
+5. Verifique en su carpeta que el archivo Dockerfile se encuentre sin ninguna extensión y elimine el archivo *Dockerfile.txt*.
