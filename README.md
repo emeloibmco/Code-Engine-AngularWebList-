@@ -64,3 +64,7 @@ copy Dockerfile.txt Dockerfile
 
 **Nota**: 
 Si desea consultar más información acerca de las instrucciones de Dockerfile para Code Engine, puede consultar <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-dockerfile"> Writing a Dockerfile for Code Engine </a>.
+
+## Paso 3. 
+### Crear imagen de la aplicación en Docker 📲
+
