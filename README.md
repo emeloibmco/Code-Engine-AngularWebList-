@@ -176,3 +176,6 @@ Si ha configurado todo correctamente debe observar la respuesta de la aplicació
 
 En una nueva ventana le debe salir la aplicación de forma similar a como se muestra a continuación:
 <p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/AngularWebList.PNG"></p>
+
+## Autores ✒
+Diana Andrea Espitia Torres.
