@@ -156,20 +156,20 @@ Para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, 
 3. En la sección **"Elija el código que desea ejecutar"** seleccione la opción **Imagen de contenedor**.
 4. De click en el botón **Configurar imagen** y coloque lo siguiente:
 * En servidor de registro coloque el nombre de dominio que indicó en la creación del acceso a registro. En este caso es **us.icr.io**.
-* En acceso a registro seleccione el nombre del acceso que creó en el [Paso 5](#Paso-5).
+* En acceso a registro seleccione el nombre del acceso que creó en el **Paso 5**.
 * Seleccione el espacio de nombres (*namespace*) que asignó cuando subió la imagen de la aplicación a *IBM Cloud Container Registry*.
 * Seleccione el repositorio (nombre de la imagen) que asignó en *IBM Cloud Container Registry*.
 * Seleccione la etiqueta de su imagen.
 * De click en el botón *Listo*.
 
-5. En el puerto de escucha coloque **8080**, teniendo en cuenta la configuración establecida en el *Dockerfile* del [Paso 2. Crear archivo Dockerfile](#Paso-2).
+5. En el puerto de escucha coloque **8080**, teniendo en cuenta la configuración establecida en el *Dockerfile* del **Paso 2**.
 6. De click en **Crear** y espere unos minutos mientras que la imagen se despliega sobre la aplicación que acaba de crear.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Aplicacion.gif"></p>
 
 ## Paso 7. 
 ### Prueba de funcionamiento 🏆
 Una vez ha desplegado la imagen en la aplicación y cuando el estado de la misma sea **preparado**, dirigase a la parte inferior en el **Panel de prueba** y de click en **Enviar solicitud**.
-<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Enviar-Solicitud.gif"></p>
+<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Enviar-Solicitud_1.gif"></p>
 
 Si ha configurado todo correctamente debe observar la respuesta de la aplicación sobre un fondo de color verde. Posteriormente vaya a la parte superior y de click en **Abrir URL de la Aplicación** para ver su aplicación funcionando. En una nueva ventana debe salir la aplicación de forma similar a como se muestra a continuación:
 <p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/AngularWebList.PNG"></p>
