@@ -62,3 +62,4 @@ copy Dockerfile.txt Dockerfile
 5. Verifique en su carpeta que el archivo Dockerfile se encuentre sin ninguna extensión y elimine el archivo *Dockerfile.txt*.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Dockerfile.gif"></p>
 
+<*Nota*
