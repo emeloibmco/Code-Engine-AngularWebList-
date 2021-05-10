@@ -177,5 +177,10 @@ Si ha configurado todo correctamente debe observar la respuesta de la aplicació
 En una nueva ventana le debe salir la aplicación de forma similar a como se muestra a continuación:
 <p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/AngularWebList.PNG"></p>
 
+## Referencias 🔎
+Encuentre ejercicios inciales de *Code Engine* en <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-getting-started"> Getting started with IBM Cloud Code Engine </a>.
+Contacto a soporte <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-get-support"> Getting support </a>.
+
 ## Autores ✒
 Diana Andrea Espitia Torres.
+Equipo IBM Cloud Tech Sales Colombia.
