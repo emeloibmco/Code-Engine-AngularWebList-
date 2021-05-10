@@ -26,14 +26,14 @@ La aplicación utilizada en esta guía la puede encontrar en  <a href="https://g
 git clone https://github.com/emeloibmco/AngularWebList.git
 ```
 4. Verifique dentro de su carpeta que se encuentran descargados los archivos de la aplicación que se muestran en el repositorio.
-<p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Clonar%20Repositorio.gif"></p>
+<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Clonar%20Repositorio.gif"></p>
 
 ## Paso 2.
 ### Crear archivo Dockerfile 📑
 Es importante contar con un archivo conocido como *Dockerfile*, el cual, contiene los comandos o instrucciones que permiten crear la imagen de una aplicación en Docker. Para agregar este archivo a su aplicación, realice los siguientes pasos:
 
 1. Ingrese a la carpeta AngularWebList creada después de clonar el respositorio.
-2. De click derecho y cree una arhivo de texto con el nombre *Dockerfile.txt*.
+2. De click derecho y cree un arhivo de texto con el nombre *Dockerfile.txt*.
 3. Dentro del archivo *Dockerfile.txt* agregue las siguientes líneas, correspondientes a las instrucciones necesarias para crear la imagen de la aplicación AngularWebList.
 ```
 
@@ -60,5 +60,5 @@ copy Dockerfile.txt Docerfile
 ```
 
 5. Verifique en su carpeta que el archivo Dockerfile se encuentre sin ninguna extensión y elimine el archivo *Dockerfile.txt*.
-<p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Dockerfile.gif"></p>
+<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Dockerfile.gif"></p>
 
