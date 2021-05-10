@@ -82,4 +82,6 @@ docker build -t <nombre_imagen:tag> .
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Docker%20Desktop%20Image.PNG"></p>
 
 
+## Paso 4. 
+### Subir imagen a Container Registry 📤
 
