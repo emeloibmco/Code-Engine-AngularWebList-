@@ -164,7 +164,7 @@ Para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, 
 
 5. En el puerto de escucha coloque **8080**, teniendo en cuenta la configuración establecida en el *Dockerfile* del **Paso 2**.
 6. De click en **Crear** y espere unos minutos mientras que la imagen se despliega sobre la aplicación que acaba de crear.
-<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Aplicacion.gif"></p>
+<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear-Aplicacion.gif"></p>
 
 ## Paso 7. 
 ### Prueba de funcionamiento 🏆
