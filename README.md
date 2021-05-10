@@ -12,8 +12,11 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 8. [Paso 7. Prueba de funcionamiento](#Paso-7)
 
 ## Pre-requisitos :pencil:
+* Tener instalado Git en su computador, para clonar el respositorio.
+* Tener instalado Docker Desktop para verificar la creación de su imagen.
 * Tener una cuenta actualizada en IBM Cloud.
 * Contar con un proyecto en Code Engine para hacer el despliegue de una imagen en una aplicación (importante con cuenta actualizada).
+
 
 ## Paso 1.
 ### Clonar repositorio AngularWebList 📁
@@ -30,7 +33,7 @@ git clone https://github.com/emeloibmco/AngularWebList.git
 
 ## Paso 2.
 ### Crear archivo Dockerfile 📑
-Es importante contar con un archivo conocido como *Dockerfile*, el cual, contiene los comandos o instrucciones que permiten crear la imagen de una aplicación en Docker. Para agregar este archivo a su aplicación, realice los siguientes pasos:
+Es importante contar con un archivo conocido como *Dockerfile*, el cual, contiene los comandos o instrucciones que permiten crear la imagen de una aplicación en *Docker*. Para agregar este archivo a su aplicación, realice los siguientes pasos:
 
 1. Ingrese a la carpeta AngularWebList creada después de clonar el respositorio.
 2. De click derecho y cree un arhivo de texto con el nombre *Dockerfile.txt*.
@@ -67,4 +70,10 @@ Si desea consultar más información acerca de las instrucciones de Dockerfile p
 
 ## Paso 3. 
 ### Crear imagen de la aplicación en Docker 📲
+Para crear la imagen de la aplicación en *Docker* siga los pasos que se muestran a continuación:
 
+1. En la ventaja de *Windows PowerShell* y asegurandose de que se encuentra dentro de la carpeta que contiene los archivos de la aplicación y el *Dockerfile*, digite el siguiente comando para crear la imagen de su aplicación:
+```
+docker build -t <nombre_imagen:tag>
+```
+> **Nota**: En la etiqueta **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la etiqueta **tag** indique la versión de su imagen, por ejemplo v1. Si desea no colocar ninguna verisón los puede hacer, dejando por defecto la versión *lastest*.
