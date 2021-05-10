@@ -110,7 +110,7 @@ ibmcloud cr login
 ```
 ibmcloud cr namespace-add <namespace>
 ```
->**Nota**: Reemplace \<namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación.
+>**Nota**: Reemplace \<namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación. Un ejemplo puede ser *awlist-final-ns*.
 
 6. Elija un repositorio y una etiqueta con la que pueda identificar su imagen. En este caso, debe colocar la información de la imagen que creó en *Docker* y el espacio de nombres (*namespace*). Coloque el siguiente comando:
 ```
