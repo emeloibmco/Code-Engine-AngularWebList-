@@ -86,7 +86,7 @@ docker build -t <nombre_imagen:tag> .
 ## Paso 4. 
 ### Subir imagen a IBM Cloud Container Registry 📤
 Una vez ha creado la imagen de su aplicación en *Docker*, se debe subir dicha imagen a *IBM Cloud Container Registry* para poder hacer el despliegue en *Code Engine*.
->**Nota**: La imagen tambien la puede subir a un registro central como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Resgistry*.
+>**Nota**: La imagen tambien la puede subir a otro registro de imagenes como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Resgistry*.
 
 Para subir la imagen creada a *IBM Cloud Container Registry* realice lo siguiente:
 1. En la ventana de *Windows PowerShell* y sin salir en ningun momento de la carpeta que contiene los archivos, inicie sesión en su cuenta de IBM Cloud con el siguiente comando:
@@ -94,8 +94,8 @@ Para subir la imagen creada a *IBM Cloud Container Registry* realice lo siguient
 ibmcloud login --sso
 ```
 
-2. Seleccione la cuenta en donde se encuentra el proyecto de Code Engine (recuerde los Pre-requisitos).
-3. Una vez ha iniciado sesión, configure el grupo de recursos y la región que está utilizando para su proyecto de Code Engine. Para ello utilice el siguiente comando:
+2. Seleccione la cuenta en donde se encuentra el proyecto de *Code Engine* (recuerde los Pre-requisitos).
+3. Una vez ha iniciado sesión, configure el grupo de recursos y la región que está utilizando para su proyecto de *Code Engine*. Para ello utilice el siguiente comando:
 ```
 ibmcloud target -r <REGION> -g <GRUPO_RECURSOS>
 ```
@@ -112,6 +112,11 @@ ibmcloud cr namespace-add <my_namespace>
 ```
 >**Nota**: Reemplace <my_namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación.
 
-6. 
+6. Elija un repositorio y una etiqueta con la que pueda identificar su imagen. En este caso, debe colocar la información de la imagen que creó en *Docker* y el *namespace* que acaba de crear. Coloque el siguiente comando:
+```
+docker tag <nombre_imagen:tag> us.icr.io/<my_namespace>/<nombre_imagen:tag>
+```
+>**Nota**: En el nombre de dominio **us.icr.io**, debe tener en cuenta colocar el dato correcto en base a la región en donde se encuentra su proyecto y grupo de recursos. Para mayor información puede consultar <a href="https://cloud.ibm.com/docs/Registry?topic=Registry-registry_overview#registry_regions"> Regiones </a>.
+
 
 
