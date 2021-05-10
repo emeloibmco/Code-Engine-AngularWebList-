@@ -168,13 +168,10 @@ Para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, 
 
 ## Paso 7. 
 ### Prueba de funcionamiento 🏆
-Una vez ha desplegado la imagen en la aplicación y el estado es **preparado**, dirigase a la parte inferior en el **Panel de prueba** y de click en **Enviar solicitud**.
+Una vez ha desplegado la imagen en la aplicación y cuando el estado de la misma sea **preparado**, dirigase a la parte inferior en el **Panel de prueba** y de click en **Enviar solicitud**.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Enviar-Solicitud.gif"></p>
 
-Si ha configurado todo correctamente debe observar la respuesta de la aplicación sobre un fondo de color verde. Posteriormente vaya a la parte superior y de click en **Abrir URL** para ver su aplicación funcionando.
-<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Abrir%20URL.gif"></p>
-
-En una nueva ventana le debe salir la aplicación de forma similar a como se muestra a continuación:
+Si ha configurado todo correctamente debe observar la respuesta de la aplicación sobre un fondo de color verde. Posteriormente vaya a la parte superior y de click en **Abrir URL** para ver su aplicación funcionando. En una nueva ventana le debe salir la aplicación de forma similar a como se muestra a continuación:
 <p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/AngularWebList.PNG"></p>
 
 ## Referencias 🔎
