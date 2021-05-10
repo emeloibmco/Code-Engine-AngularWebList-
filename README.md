@@ -1,5 +1,5 @@
 # Code-Engine-AngularWebList ☁ 
-IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de ayudarle a crear apps y trabajos modernos, centrados en orígenes y sin servidor. Code Engine abstrae la carga operativa derivada de la creación, el despliegue y la gestión de cargas de trabajo en Kubernetes para que los desarrolladores puedan centrarse en lo que para ellos es más importante: el código fuente. Esta guía está enfocada en el despliegue de una imagen de contendor de la aplicación AngularWebList sobre Code Engine. 
+*IBM Cloud Code Engine* es una plataforma desarrollada por IBM con el objetivo de ayudarle a crear apps y trabajos modernos, centrados en orígenes y sin servidor. *Code Engine* abstrae la carga operativa derivada de la creación, el despliegue y la gestión de cargas de trabajo en *Kubernetes* para que los desarrolladores puedan centrarse en lo que para ellos es más importante: el código fuente. Esta guía está enfocada en el despliegue de una imagen  de la aplicación AngularWebList sobre *Code Engine*. 
 
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
@@ -14,8 +14,8 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 ## Pre-requisitos :pencil:
 * Tener instalado *Git* en su computador, para clonar el respositorio.
 * Tener instalado *Docker Desktop* para verificar la creación de su imagen.
-* Tener una cuenta actualizada en IBM Cloud.
-* Contar con un proyecto en Code Engine para hacer el despliegue de una imagen en una aplicación (importante con cuenta actualizada).
+* Tener una cuenta actualizada en <a href="https://cloud.ibm.com/"> IBM Cloud /a>.
+* Contar con un proyecto en *Code Engine* para hacer el despliegue de una imagen en una aplicación (importante con cuenta actualizada).
 * Contar con la CLI de IBM Cloud en su computador.
 
 
@@ -34,11 +34,11 @@ git clone https://github.com/emeloibmco/AngularWebList.git
 
 ## Paso 2.
 ### Crear archivo Dockerfile 📑
-Es importante contar con un archivo conocido como *Dockerfile*, el cual, contiene los comandos o instrucciones que permiten crear la imagen de una aplicación en *Docker*. Para agregar este archivo a su aplicación, realice los siguientes pasos:
+Es importante contar con un archivo conocido como *Dockerfile*, el cual contiene los comandos o instrucciones que permiten crear la imagen de una aplicación en *Docker*. Para agregar este archivo a su aplicación, realice lo siguiente:
 
 1. Ingrese a la carpeta AngularWebList creada después de clonar el respositorio.
 2. De click derecho y cree un arhivo de texto con el nombre *Dockerfile.txt*.
-3. Dentro del archivo *Dockerfile.txt* agregue las siguientes líneas, correspondientes a las instrucciones necesarias para crear la imagen de la aplicación AngularWebList.
+3. Dentro del archivo *Dockerfile.txt* agregue las siguientes líneas correspondientes a las instrucciones necesarias para crear la imagen de la aplicación AngularWebList:
 ```
 
 FROM node:12-alpine AS builder
@@ -67,34 +67,34 @@ copy Dockerfile.txt Dockerfile
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Dockerfile.gif"></p>
 
 **Nota**: 
-Si desea consultar más información acerca de las instrucciones de Dockerfile para Code Engine, puede consultar <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-dockerfile"> Writing a Dockerfile for Code Engine </a>.
+Si desea consultar más información acerca de las instrucciones que debe contener el *Dockerfile* para *Code Engine*, puede consultar <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-dockerfile"> Writing a Dockerfile for Code Engine </a>.
 
 ## Paso 3. 
 ### Crear imagen de la aplicación en Docker 📲
 Para crear la imagen de la aplicación en *Docker* siga los pasos que se muestran a continuación:
 
-1. En la ventaja de *Windows PowerShell* y asegurandose de que se encuentra dentro de la carpeta que contiene los archivos de la aplicación y el *Dockerfile*, digite el siguiente comando para crear la imagen de su aplicación:
+1. En la ventaja de *Windows PowerShell* y asegurandose de que se encuentra dentro de la carpeta que contiene los archivos de la aplicación y el *Dockerfile*, coloque el siguiente comando para crear la imagen de su aplicación:
 ```
 docker build -t <nombre_imagen:tag> .
 ```
 > **Nota**: En la variable **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la variable **tag** indique la etiqueta de su imagen, por ejemplo v1. Si no desea colocar ninguna etiqueta lo puede hacer (en este caso se tomaría la etiqueta por defecto *lastest*).
 
-2. Una vez finalice el proceso, verifique en *Docker Desktop* que la imagen que acaba de crear aparece (recuerde revisar en base al nombre y la etiqueta que asignó al crear su imagen. En este caso fue **aplicacion-listas:v1**).
+2. Una vez finalice el proceso, verifique en *Docker Desktop* que la imagen que acaba de crear aparece en la lista de imágenes (recuerde revisar teniendo en cuenta el nombre y la etiqueta que asignó al crear su imagen. En este caso fue **aplicacion-listas:v1**).
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Docker%20Desktop%20Image.PNG"></p>
 
 
 ## Paso 4. 
 ### Subir imagen a IBM Cloud Container Registry 📤
 Una vez ha creado la imagen de su aplicación en *Docker*, se debe subir dicha imagen a *IBM Cloud Container Registry* para poder hacer el despliegue en *Code Engine*.
->**Nota**: La imagen tambien la puede subir a otro registro de imagenes como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Resgistry*.
+>**Nota**: La imagen también la puede subir a otro registro de imágenes como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Resgistry*.
 
 Para subir la imagen creada a *IBM Cloud Container Registry* realice lo siguiente:
-1. En la ventana de *Windows PowerShell* y sin salir en ningun momento de la carpeta que contiene los archivos, inicie sesión en su cuenta de IBM Cloud con el siguiente comando:
+1. En la ventana de *Windows PowerShell* y sin salir en ningun momento de la carpeta que contiene los archivos, inicie sesión en su cuenta de *IBM Cloud* con el siguiente comando:
 ```
 ibmcloud login --sso
 ```
 
-2. Seleccione la cuenta en donde se encuentra el proyecto de *Code Engine* (recuerde los Pre-requisitos).
+2. Seleccione la cuenta en donde se encuentra el proyecto de *Code Engine* (recuerde los [Pre-requisitos](#Pre-Requisitos-pencil)).
 3. Una vez ha iniciado sesión, configure el grupo de recursos y la región que está utilizando para su proyecto de *Code Engine*. Para ello utilice el siguiente comando:
 ```
 ibmcloud target -r <REGION> -g <GRUPO_RECURSOS>
@@ -116,13 +116,13 @@ ibmcloud cr namespace-add <namespace>
 ```
 docker tag <nombre_imagen:tag> us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
->**Nota**: En el nombre de dominio **us.icr.io**, debe tener en cuenta colocar el dato correcto en base a la región en donde se encuentra su proyecto y grupo de recursos. Para mayor información puede consultar <a href="https://cloud.ibm.com/docs/Registry?topic=Registry-registry_overview#registry_regions"> Regiones </a>.
+>**Nota**: En el nombre de dominio **us.icr.io**, debe tener en cuenta colocar el dato correcto en base a la región en donde se encuentra su proyecto y grupo de recursos. Para mayor información puede consultar <a href="https://cloud.ibm.com/docs/Registry?topic=Registry-registry_overview#registry_regions"> regiones </a>.
 
 7. Envíe la imagen a *IBM Cloud Container Registry* mediante el comando:
 ```
 docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
-8. Verifique en *IBM Cloud Container Registry* que aparece el espacio de nombres (*namespace*), el repositorio y la imagen de la aplicación. Tenga en cuenta los nombres que asignó en cada paso.
+8. Verifique en *IBM Cloud Container Registry* que aparece el espacio de nombres (*namespace*), el repositorio y la imagen. Tenga en cuenta los nombres que asignó en cada paso.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/CRImagen.PNG"></p>
 
 
@@ -130,12 +130,12 @@ docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 ### Crear acceso a registro en Code Engine 🔐
 Para agregar un acceso de registro a *Code Engime* debe realizar lo siguiente:
 
-1. Cree una clave API. Para ello de click en la pestaña **Gestionar** y seleccione la opción **Acceso (IAM)**. Posteriormente, de click en **Claves API** y luego en el botón **Crear una clave API de IBM Cloud**. Asigne un nombre y una descripción y presione el botón **Crear**. 
->**Nota**: No olvide guardar la clave API, ya que la usará en los pasos siguientes.
+1. Cree una clave API. Para ello de click en la pestaña **Gestionar** y seleccione la opción **Acceso (IAM)**. Posteriormente, de click en **Claves API** y luego en el botón **Crear una clave API de IBM Cloud**. Asigne un nombre, una descripción y presione el botón **Crear**. 
+>**Nota**: No olvide guardar la clave API que acaba de crear, ya que la usará en los pasos siguientes.
 
-2. De click en la lista de recursos, eliga *Code Engine* y seleccione el proyecto en el cual va a desplegar la imagen.
+2. De click en la lista de recursos, elija *Code Engine* y seleccione el proyecto en el cual va a desplegar la imagen.
 
-3. Dentro del proyecto dirijase a **Acceso de Registro** y de click en el botón **Crear** y coloque lo siguiente:
+3. Dentro del proyecto dirijase a **Acceso de Registro**, de click en el botón **Crear** y coloque lo siguiente:
 * En origen de registro seleccione la opción **Personalizado**. 
 * Asigne un nombre a su registro.
 * Como servidor de registro coloque el nombre de dominio teniendo en cuenta la región. En este caso es **us.icr.io**.
@@ -157,13 +157,13 @@ Para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, 
 4. De click en el botón **Configurar imagen** y coloque lo siguiente:
 * En servidor de registro coloque el nombre de dominio que indicó en la creación del acceso a registro. En este caso es **us.icr.io**.
 * En acceso a registro seleccione el nombre del acceso que creó en el [Paso 5](#Paso-5).
-* Seleccione el espacio de nombres que asignó cuando subió la imagen de la aplicación a *IBM Cloud Container Registry*.
+* Seleccione el espacio de nombres (*namespace*) que asignó cuando subió la imagen de la aplicación a *IBM Cloud Container Registry*.
 * Seleccione el repositorio (nombre de la imagen) que asignó en *IBM Cloud Container Registry*.
 * Seleccione la etiqueta de su imagen.
-* De click en el botón *Listo*
+* De click en el botón *Listo*.
 
-5. En el puerto de escucha coloque **8080**, teniendo en cuenta la configuración establecida en el *Dockerfile*.
-6. De click en *Crear* y espero unos minutos a que la imagen se despliegue sobre la aplicación que acaba de crear.
+5. En el puerto de escucha coloque **8080**, teniendo en cuenta la configuración establecida en el *Dockerfile* del [Paso 2. Crear archivo Dockerfile](#Paso-2).
+6. De click en **Crear** y espere unos minutos mientras que la imagen se despliega sobre la aplicación que acaba de crear.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Crear%20Aplicacion.gif"></p>
 
 ## Paso 7. 
@@ -171,7 +171,7 @@ Para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, 
 Una vez ha desplegado la imagen en la aplicación y cuando el estado de la misma sea **preparado**, dirigase a la parte inferior en el **Panel de prueba** y de click en **Enviar solicitud**.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Enviar-Solicitud.gif"></p>
 
-Si ha configurado todo correctamente debe observar la respuesta de la aplicación sobre un fondo de color verde. Posteriormente vaya a la parte superior y de click en **Abrir URL de la Aplicación** para ver su aplicación funcionando. En una nueva ventana le debe salir la aplicación de forma similar a como se muestra a continuación:
+Si ha configurado todo correctamente debe observar la respuesta de la aplicación sobre un fondo de color verde. Posteriormente vaya a la parte superior y de click en **Abrir URL de la Aplicación** para ver su aplicación funcionando. En una nueva ventana debe salir la aplicación de forma similar a como se muestra a continuación:
 <p align="center"><img width="600" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/AngularWebList.PNG"></p>
 
 ## Referencias 🔎
