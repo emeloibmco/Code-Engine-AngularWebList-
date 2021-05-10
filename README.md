@@ -149,11 +149,11 @@ Si desea consultar más información acerca de los accesos a registro puede dar 
 
 ## Paso 6. 
 ### Desplegar imagen dentro de una aplicación en Code Engine 🚀
-En este paso para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, realice lo siguiente:
+Para desplegar la imagen desde *IBM Cloud Container Registry* en *Code Engine*, realice lo siguiente:
 
 1. Dentro del proyecto de *Code Engine*, seleccione la pestaña que dice **Aplicaciones** y posteriormente de click en el botón **Crear**.
 2. Asigne un nombre para su aplicación.
-3. En la sección **"Elija el código que desea ejecutar""** seleccione la opción **Imagen de contenedor**.
+3. En la sección **"Elija el código que desea ejecutar"** seleccione la opción **Imagen de contenedor**.
 4. De click en el botón **Configurar imagen** y coloque lo siguiente:
 * En servidor de registro coloque el nombre de dominio que indicó en la creación del acceso a registro. En este caso es **us.icr.io**.
 * En acceso a registro seleccione el nombre del acceso que creó en el [Paso 5](#Paso-5).
