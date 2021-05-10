@@ -58,7 +58,7 @@ EXPOSE 8080
 ENTRYPOINT ["serve", "-l", "8080", "/app"]
 
 ```
-4. Una vez ha agregado las respectivas instrucciones, es importante que elimine la extensión del archivo. Para ello, abra una ventana de *Windows PowerShell*, dirigase a la  la carpeta que contiene el archivo *Dockerfile.txt* y copie los siguientes comandos:
+4. Una vez ha agregado las respectivas instrucciones, es importante que elimine la extensión del archivo. Para ello, abra una ventana de *Windows PowerShell*, dirigase a la carpeta que contiene el archivo *Dockerfile.txt* y copie los siguientes comandos:
 ```
 copy Dockerfile.txt Dockerfile
 ```
