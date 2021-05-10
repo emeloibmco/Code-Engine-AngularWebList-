@@ -76,9 +76,10 @@ Para crear la imagen de la aplicación en *Docker* siga los pasos que se muestra
 ```
 docker build -t <nombre_imagen:tag> .
 ```
-> **Nota**: En la etiqueta **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la etiqueta **tag** indique la versión de su imagen, por ejemplo v1. Si no desea colocar ninguna versión lo puede hacer (en este caso se tomaría la versión por defecto *lastest*).
+> **Nota**: En la variable **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la variable **tag** indique la etiqueta de su imagen, por ejemplo v1. Si no desea colocar ninguna etiqueta lo puede hacer (en este caso se tomaría la etiqueta por defecto *lastest*).
 
-2. Una vez finalice el proceso, verifique en *Docker Desktop* que la imagen que acaba de crear aparece.
+2. Una vez finalice el proceso, verifique en *Docker Desktop* que la imagen que acaba de crear aparece (recuerde revisar en base al nombre y la etiqueta que asignó al crear su imagen. En este caso fue **aplicacion-listas:v1**).
+
 
 
 
