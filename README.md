@@ -123,7 +123,7 @@ docker tag <nombre_imagen:tag> us.icr.io/<namespace>/<nombre_imagen:tag>
 docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
 8. Verifique en *IBM Cloud Container Registry* que aparece el espacio de nombres (*namespace*), el repositorio y la imagen de la aplicación. Tenga en cuenta los nombres que asignó en cada paso.
-
+<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/CRImagen.PNG"></p>
 
 
 
