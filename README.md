@@ -14,7 +14,7 @@
 ## Pre-requisitos :pencil:
 * Tener instalado *Git* en su computador, para clonar el respositorio.
 * Tener instalado *Docker Desktop* para verificar la creación de su imagen.
-* Tener una cuenta actualizada en <a href="https://cloud.ibm.com/"> IBM Cloud /a>.
+* Tener una cuenta actualizada en <a href="https://cloud.ibm.com/"> IBM Cloud </a>.
 * Contar con un proyecto en *Code Engine* para hacer el despliegue de una imagen en una aplicación (importante con cuenta actualizada).
 * Contar con la CLI de IBM Cloud en su computador.
 
