@@ -12,8 +12,8 @@ IBM Cloud Code Engine es una plataforma desarrollada por IBM con el objetivo de 
 8. [Paso 7. Prueba de funcionamiento](#Paso-7)
 
 ## Pre-requisitos :pencil:
-* Tener instalado Git en su computador, para clonar el respositorio.
-* Tener instalado Docker Desktop para verificar la creación de su imagen.
+* Tener instalado *Git* en su computador, para clonar el respositorio.
+* Tener instalado *Docker Desktop* para verificar la creación de su imagen.
 * Tener una cuenta actualizada en IBM Cloud.
 * Contar con un proyecto en Code Engine para hacer el despliegue de una imagen en una aplicación (importante con cuenta actualizada).
 
@@ -76,4 +76,9 @@ Para crear la imagen de la aplicación en *Docker* siga los pasos que se muestra
 ```
 docker build -t <nombre_imagen:tag> .
 ```
-> **Nota**: En la etiqueta **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la etiqueta **tag** indique la versión de su imagen, por ejemplo v1. Si desea no colocar ninguna versión lo puede hacer (en este caso la versión por defecto *lastest*).
+> **Nota**: En la etiqueta **nombre_imagen** asigne un nombre con el que pueda identificar la imagen. En la etiqueta **tag** indique la versión de su imagen, por ejemplo v1. Si no desea colocar ninguna versión lo puede hacer (en este caso se tomaría la versión por defecto *lastest*).
+
+2. Una vez finalice el proceso, verifique en *Docker Desktop* que la imagen que acaba de crear aparece.
+
+
+
