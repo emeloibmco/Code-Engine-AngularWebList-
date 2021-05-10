@@ -130,9 +130,11 @@ docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 ### Crear acceso a registro en Code Engine 🔐
 Para agregar acceso a *IBM Cloud Container Registry* debe realizar lo siguiente:
 
-1. Cree una clave API. 
-2. En la lista de recursos eliga *Code Engine* y seleccione el proyecto en el cual va a desplegar la imagen.
+1. Cree una clave API. Para ello de click en la pestaña **Gestionar** y seleccione la opción **Acceso (IAM)**. Posteriormente, de click en **Claves API** y luego en el botón azul **Crear una clave API de IBM Cloud**. Asigne un nombre y una descripción y presione el botón **Crear**. 
+>**Nota**: No olvider guardar la clave API, ya que la usará en los pasos siguientes.
 
+3. En la lista de recursos eliga *Code Engine* y seleccione el proyecto en el cual va a desplegar la imagen.
+<p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/Proyecto-code-engine.gif"></p>
 
 3. Dentro del proyecto dirijase a **Acceso de Registro** y de click en el botón **Crear**.
 4. 
