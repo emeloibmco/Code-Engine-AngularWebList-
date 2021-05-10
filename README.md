@@ -176,8 +176,7 @@ Si ha configurado todo correctamente debe observar la respuesta de la aplicació
 
 ## Referencias 🔎
 Encuentre ejercicios inciales de *Code Engine* en <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-getting-started"> Getting started with IBM Cloud Code Engine </a>.
-Contacto a soporte <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-get-support"> Getting support </a>.
 
 ## Autores ✒
-Diana Andrea Espitia Torres.
-Equipo IBM Cloud Tech Sales Colombia.
+* Diana Andrea Espitia Torres.
+* Equipo IBM Cloud Tech Sales Colombia.
