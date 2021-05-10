@@ -106,13 +106,13 @@ ibmcloud target -r <REGION> -g <GRUPO_RECURSOS>
 ibmcloud cr login
 ```
 
-5. Cree un *namespace* dentro de *IBM Cloud Container Registry* para su imagen. Para ello ejecute el siguiente comando:
+5. Cree un espacio de nombres (*namespace*) dentro de *IBM Cloud Container Registry* para su imagen. Para ello ejecute el siguiente comando:
 ```
 ibmcloud cr namespace-add <namespace>
 ```
->**Nota**: Reemplace /<namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación.
+>**Nota**: Reemplace \<namespace> con un nombre fácil de recordar y que esté relacionado con la imagen de la aplicación.
 
-6. Elija un repositorio y una etiqueta con la que pueda identificar su imagen. En este caso, debe colocar la información de la imagen que creó en *Docker* y el *namespace*. Coloque el siguiente comando:
+6. Elija un repositorio y una etiqueta con la que pueda identificar su imagen. En este caso, debe colocar la información de la imagen que creó en *Docker* y el espacio de nombres (*namespace*). Coloque el siguiente comando:
 ```
 docker tag <nombre_imagen:tag> us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
@@ -122,4 +122,9 @@ docker tag <nombre_imagen:tag> us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
 docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
+8. Verifique en *IBM Cloud Container Registry* que aparece el espacio de nombres (*namespace*), el repositorio y la imagen de la aplicación. Tenga en cuenta los nombres que asignó en cada paso.
+
+
+
+
 
