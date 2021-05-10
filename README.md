@@ -147,4 +147,7 @@ Para agregar un acceso de registro a *Code Engime* debe realizar lo siguiente:
 Si desea consultar más información acerca de los accesos a registro puede dar click en <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-add-registry&locale=es#add-registry-access-ce-console"> Adición de acceso de registro a Code Engine </a>.
 
 
+## Paso 6. 
+### Desplegar imagen dentro de una aplicación en Code Engine 🚀
+
 
