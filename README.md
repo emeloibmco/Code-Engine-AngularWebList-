@@ -125,7 +125,7 @@ docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
 8. Verifique en *IBM Cloud Container Registry* que aparece el espacio de nombres (*namespace*), el repositorio y la imagen. Tenga en cuenta los nombres que asignó en cada paso.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/CRImagen.PNG"></p>
-Para mayor información puede consultar <a href="https://cloud.ibm.com/registry/start"> IBM Cloud Container Resgistry </a>.
+Para mayor información puede consultar <a href="https://cloud.ibm.com/registry/start"> IBM Cloud Container Registry </a>.
 
 ## Paso 5. 
 ### Crear acceso de registro en Code Engine 🔐
