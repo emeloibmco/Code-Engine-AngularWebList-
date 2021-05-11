@@ -24,7 +24,7 @@
 La aplicación utilizada en esta guía la puede encontrar en  <a href="https://github.com/emeloibmco/AngularWebList"> AngularWebList</a>. Para clonar el repositorio en su computador, realice los siguientes pasos:
 
 1. En su computador cree una carpeta a la que pueda acceder con facilidad y asígnele un nombre relacionado con la aplicación.
-2. Abra una ventana de *Windows PowerShell* y dirigase con el comando *cd* hasta la carpeta que creó en el paso 1.
+2. Abra una ventana de *Windows PowerShell* y muevase con el comando *cd* hasta la carpeta que creó en el paso 1.
 3. Una vez se encuentre dentro de la carpeta creada coloque el siguiente comando para clonar el repositorio:
 ```
 git clone https://github.com/emeloibmco/AngularWebList.git
@@ -58,7 +58,7 @@ EXPOSE 8080
 ENTRYPOINT ["serve", "-l", "8080", "/app"]
 
 ```
-4. Una vez ha agregado las respectivas instrucciones, es importante que elimine la extensión del archivo. Para ello, abra una ventana de *Windows PowerShell*, dirigase a la carpeta que contiene el archivo *Dockerfile.txt* y copie el siguiente comando:
+4. Una vez ha agregado las respectivas instrucciones, es importante que elimine la extensión del archivo. Para ello, abra una ventana de *Windows PowerShell*, vaya a la carpeta que contiene el archivo *Dockerfile.txt* y copie el siguiente comando:
 ```
 copy Dockerfile.txt Dockerfile
 ```
@@ -73,7 +73,7 @@ Si desea consultar más información acerca de las instrucciones que debe conten
 ### Crear imagen de la aplicación en Docker 📲
 Para crear la imagen de la aplicación en *Docker* siga los pasos que se muestran a continuación:
 
-1. En la ventaja de *Windows PowerShell* y asegurandose de que se encuentra dentro de la carpeta que contiene los archivos de la aplicación y el *Dockerfile*, coloque el siguiente comando para crear la imagen de su aplicación:
+1. En la ventaja de *Windows PowerShell* y asegurándose que se encuentra dentro de la carpeta que contiene los archivos de la aplicación y el *Dockerfile*, coloque el siguiente comando para crear la imagen de su aplicación:
 ```
 docker build -t <nombre_imagen:tag> .
 ```
@@ -86,7 +86,7 @@ docker build -t <nombre_imagen:tag> .
 ## Paso 4. 
 ### Subir imagen a IBM Cloud Container Registry 📤
 Una vez ha creado la imagen de su aplicación en *Docker*, se debe subir dicha imagen a *IBM Cloud Container Registry* para poder hacer el despliegue en *Code Engine*.
->**Nota**: La imagen también la puede subir a otro registro de imágenes como *Docker Hub*, pero para este caso practico utilizamos *IBM Cloud Container Registry*.
+>**Nota**: La imagen también la puede subir a otro registro de imágenes como *Docker Hub*, pero para este caso utilizamos *IBM Cloud Container Registry*.
 
 Para subir la imagen creada a *IBM Cloud Container Registry* realice lo siguiente:
 1. En la ventana de *Windows PowerShell* y sin salir en ningún momento de la carpeta que contiene los archivos, inicie sesión en su cuenta de *IBM Cloud* con el siguiente comando:
@@ -124,10 +124,10 @@ docker push us.icr.io/<namespace>/<nombre_imagen:tag>
 ```
 8. Verifique en *IBM Cloud Container Registry* que aparece el espacio de nombres (*namespace*), el repositorio y la imagen. Tenga en cuenta los nombres que asignó en cada paso.
 <p align="center"><img width="700" src="https://github.com/emeloibmco/Code-Engine-AngularWebList-/blob/main/Imagenes/CRImagen.PNG"></p>
-
+**Nota**: Para mayor información puede consultar <a href="https://cloud.ibm.com/registry/start"> IBM Cloud Container Resgistry </a>.
 
 ## Paso 5. 
-### Crear acceso a registro en Code Engine 🔐
+### Crear acceso de registro en Code Engine 🔐
 Para agregar un acceso de registro a *Code Engine* debe realizar lo siguiente:
 
 1. Cree una clave API. Para ello de click en la pestaña **Gestionar** y seleccione la opción **Acceso (IAM)**. Posteriormente, de click en **Claves API** y luego en el botón **Crear una clave API de IBM Cloud**. Asigne un nombre, una descripción y presione el botón **Crear**. 
